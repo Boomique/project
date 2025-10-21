@@ -1,0 +1,152 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+h1, h2, .heading {
+
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  color: white;
+  padding: 15px 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  font-family: 'Courier New', Courier, monospace;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.nav-links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #22c55e;
+}
+
+.active {
+  color: #22c55e;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-text h3{
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 0.9;
+}
+
+.overlay-text p{
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 0.9;
+}
+
+.overlay-text button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.catalog {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f8fafc;
+}
+
+.catalog h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1e293b;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.product-card h3 {
+  margin: 15px 0 5px;
+  color: #0f172a;
+}
+
+.price {
+  display: block;
+  color: #22c55e;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #16a34a;
+}
