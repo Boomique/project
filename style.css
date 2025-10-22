@@ -82,71 +82,90 @@ h1, h2, .heading {
   line-height: 0.9;
 }
 
-.overlay-text button{
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+.image-container .btn {
+  position: absolute;
+  top: 56%;
+  left: 12%;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); 
+  background-color: #22c55e;
+  color: rgb(255, 255, 255);
   font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .catalog {
   text-align: center;
-  padding: 80px 20px;
-  background: #f8fafc;
+  padding: 100px 20px;
+  background: #fff;
 }
 
 .catalog h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  color: #1e293b;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
 }
 
-.product-grid {
+.catalog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 30px;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.product-card {
-  background: white;
+.catalog-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 20px;
-}
-
-.product-card img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.product-card h3 {
-  margin: 15px 0 5px;
-  color: #0f172a;
-}
-
-.price {
-  display: block;
-  color: #22c55e;
-  font-weight: 600;
-  margin: 10px 0;
-}
-
-button {
-  background-color: #22c55e;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
+  overflow: hidden;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
-button:hover {
-  background-color: #16a34a;
+.catalog-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.catalog-item .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  
+}
+
+.catalog-item:hover .overlay {
+  background: rgba(0,0,0,0.6);
+}
+
+.catalog-item h3 {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.4;
+}
+
+
+
+.adv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
